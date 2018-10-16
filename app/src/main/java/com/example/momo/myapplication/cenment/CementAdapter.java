@@ -73,7 +73,7 @@ public class CementAdapter extends RecyclerView.Adapter<CementViewHolder> {
         mSpanCount = spanCount;
     }
 
-    protected CementAdapter() {
+    public CementAdapter() {
         /**
          * 在使用RecyclerView时，难免会用到adapter的notifyDataSetChanged方法来更新数据，
          * 其实notify**Changed系列方法都存在一个已知的焦点丢失的bug，

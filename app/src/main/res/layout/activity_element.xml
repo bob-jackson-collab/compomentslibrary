@@ -11,10 +11,11 @@
             android:text="element"
     />
 
-    <FrameLayout
+    <LinearLayout
             android:id="@+id/frame"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+    android:orientation="vertical">
         <TextView
                 android:id="@+id/tv_name"
                 android:layout_width="match_parent"
@@ -24,14 +25,10 @@
                 android:gravity="center"
                 android:textColor="@color/colorAccent"
         />
-    </FrameLayout>
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
 
-    <android.support.v7.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-    /storage/emulated/0/immomo/avatar/large/1/1537951483127.jpg_
-    /storage/emulated/0/immomo/avatar/large/1/1537951483127_preview.jpg_
-    1537951483127_preview
 </LinearLayout>

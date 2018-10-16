@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:background="#00ffff"
+             android:clipChildren="false"
+             android:layout_height="match_parent">
+
+    <com.example.momo.myapplication.ParticleView
+            android:id="@+id/particleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:visibility="gone"
+    />
+    <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        <ImageView
+                android:id="@+id/similarity_module_iv_guide_one"
+                android:layout_width="124dp"
+                android:layout_height="124dp"
+                android:layout_marginLeft="57.5dp"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/rectangle"
+                android:rotation="65"/>
+
+        <ImageView
+                android:id="@+id/similarity_module_iv_guide_two"
+                android:layout_width="109.5dp"
+                android:layout_height="109.5dp"
+                android:layout_marginLeft="-15.5dp"
+                android:layout_marginTop="87.7dp"
+                android:layout_toRightOf="@id/similarity_module_iv_guide_one"
+                android:src="@drawable/rectangle"
+                android:rotation="40"/>
+
+        <ImageView
+                android:id="@+id/similarity_module_iv_guide_three"
+                android:layout_width="84.2dp"
+                android:layout_height="84.2dp"
+                android:layout_marginLeft="-28.5dp"
+                android:layout_marginTop="146.7dp"
+                android:layout_toRightOf="@id/similarity_module_iv_guide_two"
+                android:src="@drawable/rectangle"
+                android:rotation="65"/>
+
+        <ImageView
+                android:id="@+id/similarity_module_iv_guide_four"
+                android:layout_width="89dp"
+                android:layout_height="89dp"
+                android:layout_marginLeft="33.4dp"
+                android:layout_marginTop="207.4dp"
+                android:src="@drawable/rectangle"
+                android:rotation="60"/>
+
+        <ImageView
+                android:id="@+id/similarity_module_iv_guide_five"
+                android:layout_width="88.3dp"
+                android:layout_height="88.3dp"
+                android:layout_marginLeft="-11.5dp"
+                android:layout_marginTop="249.8dp"
+                android:layout_toRightOf="@id/similarity_module_iv_guide_four"
+                android:src="@drawable/rectangle"
+                android:rotation="-50"/>
+
+        <ImageView
+                android:id="@+id/similarity_module_iv_guide_six"
+                android:layout_width="122.5dp"
+                android:layout_height="122.5dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="213.5dp"
+                android:layout_toRightOf="@id/similarity_module_iv_guide_five"
+                android:src="@drawable/rectangle"
+                android:rotation="-14"/>
+
+        <ImageView
+                android:id="@+id/similarity_module_iv_center"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="153.5dp"
+                android:src="@drawable/similarity_module_ic_guide_hear"/>
+
+
+    </RelativeLayout>
+
+    <com.robinhood.ticker.TickerView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textSize="50sp"
+            android:visibility="gone"
+            app:ticker_animationDuration="2000"
+            app:ticker_defaultCharacterList="number"
+            android:text="398,323,123"/>
+
+
+    <com.robinhood.ticker.TickerView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textSize="27sp"
+            android:layout_marginTop="300dp"
+            app:ticker_animationDuration="2000"
+            android:visibility="gone"
+            app:ticker_defaultCharacterList="number"
+            android:text="398,323,123"/>
+
+
+    <com.robinhood.ticker.TickerView
+            android:id="@+id/ticker1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="1234567"
+            android:textColor="?colorPrimary"
+            android:textSize="50sp"
+            android:visibility="gone"
+            app:ticker_animationDuration="2000"
+            app:ticker_defaultCharacterList="number"/>
+
+    <com.robinhood.ticker.TickerView
+            android:id="@+id/ticker2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textStyle="bold"
+            app:ticker_animationDuration="500"
+            app:ticker_defaultCharacterList="number"
+            tools:text="$123.45"/>
+
+    <com.robinhood.ticker.TickerView
+            android:id="@+id/ticker3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            app:ticker_animationDuration="500"
+            app:ticker_defaultCharacterList="alphabet"/>
+
+    <Button
+            android:id="@+id/perfBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="1111"/>
+</FrameLayout>

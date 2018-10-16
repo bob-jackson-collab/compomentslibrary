@@ -26,10 +26,10 @@ public class CementViewHolder extends RecyclerView.ViewHolder {
     void bind(@NonNull CementModel model, @Nullable List<Object> payloads) {
         if (payloads != null && !payloads.isEmpty()) {
             // noinspection unchecked
-//            model.bindData(this, payloads);
+            model.bindData(this, payloads);
         } else {
             // noinspection unchecked
-//            model.bindData(this);
+            model.bindData(this);
         }
 
         this.mCementModel = model;
@@ -38,13 +38,12 @@ public class CementViewHolder extends RecyclerView.ViewHolder {
     void unbind() {
         if (mCementModel == null) return;
         // noinspection unchecked
-//        model.unbind(this);
-//        model = null;
+        mCementModel.unbind(this);
+        mCementModel = null;
     }
 
     boolean shouldSaveViewState() {
-//        return mCementModel != null && mCementModel.shouldSaveViewState();
-        return true;
+        return mCementModel != null && mCementModel.shouldSaveViewState();
     }
 
     @Nullable

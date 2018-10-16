@@ -29,6 +29,7 @@ public class ElementActivity extends AppCompatActivity {
     private List<Element> mElements = new ArrayList<>();
     private UserElement mUserElement;
     private View userView;
+    private List<TextModel> mTextModels = new ArrayList<>();
 
     @TargetApi(Build.VERSION_CODES.KITKAT)
     @Override
@@ -40,6 +41,22 @@ public class ElementActivity extends AppCompatActivity {
         mElements.add(mUserElement);
         mElementManager = new ElementManager(this, mElements);
         mElementManager.onCreate();
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+    public void requestData(){
+        List<String> datas = new ArrayList<>();
+        datas.add("111111111");
+        datas.add("222222222");
+        datas.add("333333333");
+        datas.add("444444444");
+
+        for (String data : datas) {
+            TextModel textModel = new TextModel(data);
+            mTextModels.add(textModel);
+        }
+
+        mUserElement.setDatas(mTextModels);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
