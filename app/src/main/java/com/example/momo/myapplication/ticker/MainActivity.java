@@ -130,14 +130,12 @@ public class MainActivity extends BaseActivity {
                         bounce.setDuration(400);
                         bounce.setInterpolator(new AnticipateInterpolator());
                         bounce.getAnimatorAgent().playTogether(
-                                ObjectAnimator.ofFloat(mRl, "scaleX", 1f, 0.9f),
-                                ObjectAnimator.ofFloat(mRl, "scaleY", 1f, 0.9f)
+                                ObjectAnimator.ofFloat(mRl, "scaleX", 1.1f, 0.9f),
+                                ObjectAnimator.ofFloat(mRl, "scaleY", 1.1f, 0.9f)
                         );
                         bounce.start();
                     }
                 }, 300);
-
-
             }
         });
 

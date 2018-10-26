@@ -22,6 +22,8 @@
         <activity android:name=".ParticleActivity">
         </activity>
         <activity android:name=".ticker.MainActivity">
+        </activity>
+        <activity android:name=".scroller.ScrollerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

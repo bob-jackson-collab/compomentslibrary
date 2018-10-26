@@ -5,4 +5,8 @@
 
     <item type="id" name="statusbarutil_fake_status_bar_view"/>
     <item type="id" name="statusbarutil_translucent_view"/>
+
+    <item name="appbar_id" type="id"/>
+    <item name="toolbar_id" type="id"/>
+    <item name="tablayout_id" type="id"/>
 </resources>
