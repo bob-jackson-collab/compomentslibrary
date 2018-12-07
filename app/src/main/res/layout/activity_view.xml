@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
 
-    <com.example.momo.myapplication.QuestionView
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:layout_gravity="center"
-            android:background="@color/colorPrimary"/>
+    <com.example.momo.myapplication.viewpager.AutoScrollViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#00ff00"
+            app:stopWhenTouch="true"
+            app:slideInterval="3000"
+            app:slideDirection="right"
+            app:slideDuration="500"/>
+
 </LinearLayout>

@@ -2,15 +2,34 @@
 <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
 
     <TextView
             android:id="@+id/tv"
             android:layout_width="300dp"
-              android:layout_height="100dp"
-              android:text="历史老师看看纠结死奥斯"
-              android:textSize="25sp"
-              android:textColor="@color/colorPrimary"/>
+            android:layout_height="100dp"
+            android:text="历史老师看看纠结死奥斯"
+            android:textSize="25sp"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimary"/>
 
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="300dp">
+        <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="start"
+                android:background="#00ffff"/>
+
+        <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"/>
+    </RelativeLayout>
 </LinearLayout>

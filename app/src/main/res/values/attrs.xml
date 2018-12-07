@@ -23,4 +23,16 @@
         <attr name="lineRightMargin" format="dimension|reference"/>
         <attr name="lineBottomMargin" format="dimension|reference"/>
     </declare-styleable>
+
+
+    <declare-styleable name="AutoScrollViewPager">
+        <attr name="slideInterval" format="integer"/>
+        <attr name="slideDirection" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr name="stopWhenTouch" format="boolean"/>
+        <attr name="cycle" format="boolean"/>
+        <attr name="slideDuration" format="integer"/>
+    </declare-styleable>
 </resources>
