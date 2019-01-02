@@ -28,11 +28,11 @@ public class ViewActivity extends AppCompatActivity {
         data.add("11111");
         data.add("22222");
         data.add("333333");
-        AutoScrollViewPager mViewPager = (AutoScrollViewPager) findViewById(R.id.viewPager);
-        mViewPager.setStopWhenTouch(false);
-        MyAdapter mAdapter = new MyAdapter(data);
-        mViewPager.setAdapter(mAdapter);
-        // optional start auto scroll
-        mViewPager.startAutoScroll();
+//        AutoScrollViewPager mViewPager = (AutoScrollViewPager) findViewById(R.id.viewPager);
+//        mViewPager.setStopWhenTouch(false);
+//        MyAdapter mAdapter = new MyAdapter(data);
+//        mViewPager.setAdapter(mAdapter);
+//        // optional start auto scroll
+//        mViewPager.startAutoScroll();
     }
 }

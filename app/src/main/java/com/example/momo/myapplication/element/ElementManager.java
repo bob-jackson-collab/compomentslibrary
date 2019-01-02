@@ -14,12 +14,14 @@ import java.util.List;
  *   desc: MyApplication
  * </pre>
  */
-@RequiresApi(api = Build.VERSION_CODES.KITKAT)
 public class ElementManager {
-
     private Context mContext;
     private List<Element> mElementList;
     private ArrayMap<Class<? extends Element>, Element> mClassElementArrayMap = new ArrayMap<>();
+
+    /**
+     * 为Element提供的上下文环境，提供公共的接口
+     */
     private IElementContext mIElementContext = new IElementContext() {
         @Override
         public Context getContext() {
@@ -27,6 +29,7 @@ public class ElementManager {
         }
 
         @Override
+        @SuppressWarnings("unchecked")
         public <T extends Element> T getElement(Class<T> cls) {
             return (T) mClassElementArrayMap.get(cls);
         }
